@@ -3,7 +3,7 @@ LISP ?= sbcl
 all: build
 
 # can use bespoke dir like 'QLDIR=~/nostandard/local-projects make'
-QLDIR ?= ~/.roswell/lisp/quicklisp/local-projects
+QLDIR ?= $(HOME)/quicklisp/local-projects
 
 # make will exit early if git clone errors b/c dir already exists
 define git-clone-pull =
