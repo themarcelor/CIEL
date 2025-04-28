@@ -19,3 +19,4 @@ RUN make ql-deps \
     && make build \
     && cp ./ciel /usr/local/bin/
 
+ENTRYPOINT ["/usr/local/bin/ciel"]
